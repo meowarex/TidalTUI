@@ -1,4 +1,4 @@
-from Client import run_tui
+from Client import PlaylistApp
 
 if __name__ == "__main__":
-    run_tui() 
+    PlaylistApp().run() 
