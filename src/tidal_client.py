@@ -6,6 +6,20 @@ from dataclasses import dataclass
 from typing import List, Optional
 import subprocess
 import sys
+import logging
+
+# Clear the log file if it exists
+if os.path.exists('tidal_tui.log'):
+    open('tidal_tui.log', 'w').close()
+
+# Setup logging
+logging.basicConfig(
+    filename='tidal_tui.log',
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+logging.info("=== Starting new TidalTUI session ===")
 
 def clear():
     os.system("clear" if os.name != 'nt' else "cls")
@@ -31,6 +45,7 @@ class Playlist:
 class TidalClient:
     def __init__(self):
         self.session = tidalapi.Session()
+        logging.info("Initializing TidalClient")
         self._load_or_login()
 
     def _load_or_login(self):
@@ -74,49 +89,49 @@ class TidalClient:
 
     def get_tracks(self, playlist_id: str) -> List[Track]:
         try:
-            print(f"\nFetching playlist: {playlist_id}")
+            logging.info(f"Fetching playlist: {playlist_id}")
             playlist = self.session.playlist(playlist_id)
             
             if not playlist:
-                print("Error: Could not fetch playlist")
+                logging.error("Could not fetch playlist")
                 return []
             
-            print("Getting tracks from playlist...")
-            playlist_tracks = playlist.tracks()
-            
-            if not playlist_tracks:
-                print("Error: No tracks found in playlist")
-                return []
+            logging.info("Getting tracks from playlist...")
+            tracks_list = playlist.tracks(limit=25)  # Using same limit as working example
             
             tracks = []
-            for t in playlist_tracks:
+            x = -1
+            for name in tracks_list:
+                x = x + 1
                 try:
                     track = Track(
-                        id=str(t.id),
-                        title=t.name,
-                        artist=t.artist.name,
-                        duration=t.duration,
-                        album=t.album.name,
-                        url=t.get_url()
+                        id=str(tracks_list[x].id),
+                        title=tracks_list[x].name,
+                        artist=tracks_list[x].artist.name,
+                        duration=tracks_list[x].duration,
+                        album=tracks_list[x].album.name,
+                        url=tracks_list[x].get_url()
                     )
                     tracks.append(track)
-                    print(f"Added track: {track.title} by {track.artist}")
+                    logging.info(f"Added track: {track.title}")
                 except Exception as e:
-                    print(f"Failed to load track: {e}")
+                    logging.error(f"Failed to load track: {e}")
             
-            print(f"Successfully loaded {len(tracks)} tracks")
+            logging.info(f"Successfully loaded {len(tracks)} tracks")
             return tracks
             
         except Exception as e:
-            import traceback
-            print(f"Error loading playlist: {e}")
-            print(traceback.format_exc())
+            logging.error(f"Error loading playlist: {e}")
+            logging.error(traceback.format_exc())
             return []
 
     def play_track(self, track_url: str):
         try:
             process = subprocess.Popen(f"mpv '{track_url}'", shell=True)
+            # Wait for process to complete or be killed
+            while process.poll() is None:
+                pass
             return process
         except Exception as e:
-            print(f"Error playing track: {e}")
+            logging.error(f"Error playing track: {e}")
             return None 

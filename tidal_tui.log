@@ -1,0 +1,47 @@
+2024-12-27 15:58:08,082 - INFO - === Starting Tidal TUI Session ===
+2024-12-27 15:58:08,086 - DEBUG - Starting new HTTPS connection (1): api.tidal.com:443
+2024-12-27 15:58:08,382 - DEBUG - https://api.tidal.com:443 "GET /v1/sessions?limit=1000 HTTP/1.1" 200 255
+2024-12-27 15:58:08,383 - DEBUG - request: https://api.tidal.com/v1/sessions?limit=1000
+2024-12-27 15:58:08,615 - DEBUG - https://api.tidal.com:443 "GET /v1/users/187975641?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 409
+2024-12-27 15:58:08,615 - DEBUG - request: https://api.tidal.com/v1/users/187975641?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:08,880 - DEBUG - https://api.tidal.com:443 "GET /v1/users/187975641/subscription?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 293
+2024-12-27 15:58:08,880 - INFO - Loading user playlists...
+2024-12-27 15:58:09,117 - DEBUG - https://api.tidal.com:443 "GET /v1/users/187975641/playlists?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 None
+2024-12-27 15:58:09,120 - DEBUG - request: https://api.tidal.com/v1/users/187975641/playlists?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:09,359 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/94941adf-baaf-4fbc-8d5a-b1c8db8ba96b?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 755
+2024-12-27 15:58:09,359 - DEBUG - request: https://api.tidal.com/v1/playlists/94941adf-baaf-4fbc-8d5a-b1c8db8ba96b?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:09,603 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/b950645c-ca14-4462-b7a4-35cc58e11f70?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 572
+2024-12-27 15:58:09,604 - DEBUG - request: https://api.tidal.com/v1/playlists/b950645c-ca14-4462-b7a4-35cc58e11f70?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:09,840 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/b25d244c-8c81-4f6e-90a7-8fa793540e11?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 747
+2024-12-27 15:58:09,840 - DEBUG - request: https://api.tidal.com/v1/playlists/b25d244c-8c81-4f6e-90a7-8fa793540e11?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:10,079 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/541db843-c5fa-433c-b3cc-04234ebc04ca?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 573
+2024-12-27 15:58:10,080 - DEBUG - request: https://api.tidal.com/v1/playlists/541db843-c5fa-433c-b3cc-04234ebc04ca?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:10,316 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/84c5416b-f9c1-4cad-a116-859a197a2c91?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 570
+2024-12-27 15:58:10,316 - DEBUG - request: https://api.tidal.com/v1/playlists/84c5416b-f9c1-4cad-a116-859a197a2c91?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:10,555 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/54abbc3e-7146-4ed4-8b1f-ff05149c0a39?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 744
+2024-12-27 15:58:10,555 - DEBUG - request: https://api.tidal.com/v1/playlists/54abbc3e-7146-4ed4-8b1f-ff05149c0a39?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:10,792 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/4fad1b2b-fd88-4f7e-bedf-2049b630c32a?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 577
+2024-12-27 15:58:10,792 - DEBUG - request: https://api.tidal.com/v1/playlists/4fad1b2b-fd88-4f7e-bedf-2049b630c32a?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:11,034 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/98daca82-f4a4-4251-827c-a74afd5ed537?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 629
+2024-12-27 15:58:11,034 - DEBUG - request: https://api.tidal.com/v1/playlists/98daca82-f4a4-4251-827c-a74afd5ed537?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:11,278 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/1e0d5c59-9195-484d-8bed-3d4b429b9ceb?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 577
+2024-12-27 15:58:11,279 - DEBUG - request: https://api.tidal.com/v1/playlists/1e0d5c59-9195-484d-8bed-3d4b429b9ceb?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:11,518 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/757668cb-5471-4a49-93b7-05c344a1a44b?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 640
+2024-12-27 15:58:11,518 - DEBUG - request: https://api.tidal.com/v1/playlists/757668cb-5471-4a49-93b7-05c344a1a44b?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:11,761 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/bf1b9dd3-5563-43c2-b275-5c5d908b9f93?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 580
+2024-12-27 15:58:11,761 - DEBUG - request: https://api.tidal.com/v1/playlists/bf1b9dd3-5563-43c2-b275-5c5d908b9f93?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:12,001 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/0237e1bf-c486-4efd-9102-2661c498694c?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 567
+2024-12-27 15:58:12,001 - DEBUG - request: https://api.tidal.com/v1/playlists/0237e1bf-c486-4efd-9102-2661c498694c?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:12,243 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/5b1d07f7-097d-4bff-84d8-61ada49fdb79?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 645
+2024-12-27 15:58:12,243 - DEBUG - request: https://api.tidal.com/v1/playlists/5b1d07f7-097d-4bff-84d8-61ada49fdb79?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:12,486 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/87d50512-44df-48f2-bbb2-9ced18f387a6?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 613
+2024-12-27 15:58:12,486 - DEBUG - request: https://api.tidal.com/v1/playlists/87d50512-44df-48f2-bbb2-9ced18f387a6?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:12,727 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/16d0ae76-d6db-4768-82a1-4e35e383fc98?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 576
+2024-12-27 15:58:12,727 - DEBUG - request: https://api.tidal.com/v1/playlists/16d0ae76-d6db-4768-82a1-4e35e383fc98?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:12,969 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/051a712d-853c-40ca-9368-36e0df45be1b?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 573
+2024-12-27 15:58:12,970 - DEBUG - request: https://api.tidal.com/v1/playlists/051a712d-853c-40ca-9368-36e0df45be1b?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:13,207 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/e07ea13f-ef4f-4f3d-90f1-e689ee8421d5?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 639
+2024-12-27 15:58:13,207 - DEBUG - request: https://api.tidal.com/v1/playlists/e07ea13f-ef4f-4f3d-90f1-e689ee8421d5?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:13,444 - DEBUG - https://api.tidal.com:443 "GET /v1/playlists/192a4310-0efe-4dd4-aec4-bd7fc8378a11?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000 HTTP/1.1" 200 582
+2024-12-27 15:58:13,445 - DEBUG - request: https://api.tidal.com/v1/playlists/192a4310-0efe-4dd4-aec4-bd7fc8378a11?sessionId=ef6ef9b9-83b9-4196-8008-83b99f38af4f&countryCode=AU&limit=1000
+2024-12-27 15:58:13,445 - DEBUG - Using selector: EpollSelector
